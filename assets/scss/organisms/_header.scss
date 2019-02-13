@@ -1,0 +1,36 @@
+@import "../atoms/logo";
+@import "../atoms/header_navigation";
+@import "../atoms/header_call";
+@import "../atoms/header_image";
+
+header {
+    min-height: 100vh;
+    background-image: url('/assets/img/header_bg.png');
+    background-position: top center;
+    background-size: 2560px;
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: 992px) {
+        background-size: auto 800px;
+    }
+
+    @media screen and (max-width: 425px) {
+        background-size: auto 600px;
+        background-position: top right;
+
+        .navigation {
+            padding: 30px;
+            min-height: 300px;
+            text-align: right;
+            ul li { margin-right: 0!important; }
+            h1.logo { margin-bottom: 10px }
+        }
+    }
+
+    .navigation {
+        padding: 50px;
+        min-height: 300px;
+
+        h1.logo { margin-bottom: 20px }
+    }
+}

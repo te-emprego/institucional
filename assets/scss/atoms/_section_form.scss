@@ -1,0 +1,54 @@
+form {
+    position: relative;
+    z-index: 3;
+    
+    input[type="text"] {
+        height: 65px;
+        border-radius: 60px;
+        box-shadow: 0 3px 6px rgba(#000, .15);
+        border: 3px solid transparent;
+        padding: 0 30px;
+        margin-bottom: 20px;
+        outline: none;
+        font-size: 17px;
+        font-family: 'Nunito', sans-serif;
+        transition: .25s ease;
+        width: 100%;
+
+        &:focus {
+            border-color: rgba($primary, .1);
+        }
+    }
+
+    button {
+        display: block;
+        width: 100%;
+        height: 65px;
+        background-color: $primary;
+        text-align: center;
+        color: $white;
+        border: none;
+        border-radius: 60px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: .25s ease;
+        box-shadow: 0 3px 6px rgba($primary, .3);
+        outline: none;
+
+        &:hover {
+            background-color: darken($primary, 10%);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 6px rgba($primary, .3);
+        }
+
+        &:active {
+            transition: .1s ease;
+            background-color: darken($primary, 10%);
+            transform: translateY(2px);
+            box-shadow: 0 0 6px rgba($primary, .3);
+        }
+    }
+}

@@ -1,0 +1,35 @@
+footer {
+    background-image: url('/assets/img/footer_bg.svg');
+    background-repeat: no-repeat;
+    background-size: 1920px;
+    background-position: bottom;
+    min-height: 736px;
+    margin-top: -400px;
+    padding-top: 400px;
+    text-align: right;
+    color: $white;
+    position: relative;
+
+    @media screen and (max-width: 425px) {
+        text-align: center;
+    }
+
+    .logo {
+        text-align: right;
+        margin-bottom: 20px;
+        img {
+            max-width: 470px;
+        }
+    }
+
+    .copy {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    a {
+        color: $white;
+        text-decoration: none;
+        border-bottom: 1px dashed $white;
+    }
+}

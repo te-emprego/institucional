@@ -1,0 +1,29 @@
+.message-box {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 11;
+    background-color: rgba($secondary, .6);
+    color: $secondary;
+
+    .wrapper {
+        animation: .5s scale-in ease;
+        background-color: $white;
+        padding: 30px;
+        max-width: 480px;
+        box-shadow: 0 3px 10px rgba(#000, .3);
+    }
+}
+
+@keyframes scale-in {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}

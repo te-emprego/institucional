@@ -1,0 +1,440 @@
+@import "/vendor/bootstrap/bootstrap-grid.css";
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,700,800,900");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+.custom-input {
+  padding: 7px;
+  border-radius: 60px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  display: flex;
+  position: relative;
+  margin-bottom: 50px;
+  transition: 0.25s ease;
+  border: 3px solid transparent;
+}
+.custom-input.focus {
+  border-color: rgba(86, 30, 187, 0.1);
+}
+.custom-input input {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  height: 40px;
+  border: none;
+  padding-left: 20px;
+  flex-grow: 1;
+  outline: none;
+}
+.custom-input button {
+  background: #561EBB;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 60px;
+  border: none;
+  padding: 0 35px;
+  outline: none;
+  transition: 0.25s ease;
+  cursor: pointer;
+}
+.custom-input button:hover, .custom-input button:focus {
+  padding: 0 40px;
+  background: #42178f;
+}
+.custom-input button:active {
+  transform: scale(0.9);
+  transition: 0.15s ease;
+}
+.custom-input span {
+  position: absolute;
+  bottom: -40px;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.6;
+  cursor: default;
+  transition: 0.15s ease;
+}
+.custom-input span:hover {
+  opacity: 1;
+}
+@media screen and (max-width: 375px) {
+  .custom-input {
+    flex-wrap: wrap;
+  }
+  .custom-input input {
+    width: 100%;
+    height: 50px;
+    border-radius: 60px;
+    background-color: transparent;
+    text-align: center;
+  }
+  .custom-input button {
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .custom-input span {
+    bottom: -60px;
+  }
+}
+
+body {
+  margin-bottom: -30px;
+}
+
+h1.logo span {
+  display: none;
+}
+h1.logo img {
+  width: 220px;
+}
+
+header .navigation ul {
+  list-style: none;
+}
+header .navigation ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+  cursor: pointer;
+}
+header .navigation ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+header .navigation ul li:not(:last-child) {
+  margin-right: 20px;
+}
+
+header .main-call {
+  color: #561EBB;
+  margin-top: 40px;
+}
+header .main-call h2 {
+  font-size: 54px;
+  text-transform: uppercase;
+  line-height: 74px;
+  margin-bottom: 20px;
+}
+header .main-call h2 span {
+  font-size: 94px;
+  font-weight: 900;
+}
+@media screen and (max-width: 425px) {
+  header .main-call h2 span {
+    font-size: 60px;
+  }
+}
+header .main-call p {
+  font-size: 24px;
+  font-weight: 700;
+  color: #003591;
+  margin-bottom: 40px;
+}
+header .main-call p strong {
+  font-weight: 700;
+  color: #561EBB;
+}
+
+header .main-image img {
+  margin-top: 100px;
+}
+@media screen and (min-width: 992px) {
+  header .main-image img {
+    margin-top: -100px;
+  }
+}
+
+header {
+  min-height: 100vh;
+  background-image: url("/assets/img/header_bg.png");
+  background-position: top center;
+  background-size: 2560px;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 992px) {
+  header {
+    background-size: auto 800px;
+  }
+}
+@media screen and (max-width: 425px) {
+  header {
+    background-size: auto 600px;
+    background-position: top right;
+  }
+  header .navigation {
+    padding: 30px;
+    min-height: 300px;
+    text-align: right;
+  }
+  header .navigation ul li {
+    margin-right: 0 !important;
+  }
+  header .navigation h1.logo {
+    margin-bottom: 10px;
+  }
+}
+header .navigation {
+  padding: 50px;
+  min-height: 300px;
+}
+header .navigation h1.logo {
+  margin-bottom: 20px;
+}
+
+section h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+form {
+  position: relative;
+  z-index: 3;
+}
+form input[type=text] {
+  height: 65px;
+  border-radius: 60px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  border: 3px solid transparent;
+  padding: 0 30px;
+  margin-bottom: 20px;
+  outline: none;
+  font-size: 17px;
+  font-family: "Nunito", sans-serif;
+  transition: 0.25s ease;
+  width: 100%;
+}
+form input[type=text]:focus {
+  border-color: rgba(86, 30, 187, 0.1);
+}
+form button {
+  display: block;
+  width: 100%;
+  height: 65px;
+  background-color: #561EBB;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  border-radius: 60px;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.25s ease;
+  box-shadow: 0 3px 6px rgba(86, 30, 187, 0.3);
+  outline: none;
+}
+form button:hover {
+  background-color: #42178f;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 6px rgba(86, 30, 187, 0.3);
+}
+form button:active {
+  transition: 0.1s ease;
+  background-color: #42178f;
+  transform: translateY(2px);
+  box-shadow: 0 0 6px rgba(86, 30, 187, 0.3);
+}
+
+section {
+  padding: 250px 0;
+}
+section:nth-child(1) {
+  background-image: url("/assets/img/projeto_bg.svg");
+  background-size: 1920px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  padding-bottom: 400px;
+}
+section:nth-child(2) {
+  background-image: url("/assets/img/bg_white.svg");
+  background-size: 1920px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  color: #561EBB;
+  padding-top: 500px;
+  margin-top: -400px;
+  position: relative;
+  overflow-x: hidden;
+}
+section:nth-child(2)::before {
+  width: 270px;
+  content: "";
+  height: 300px;
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  background-repeat: no-repeat;
+  background-image: url("/assets/img/bolha.svg");
+}
+section:nth-child(2)::after {
+  width: 290px;
+  content: "";
+  height: 240px;
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 30px;
+  left: 35%;
+  background-image: url("/assets/img/bolha_alt.svg");
+}
+section p {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 16px;
+}
+section p.subtitle {
+  font-size: 24px;
+}
+section a {
+  display: inline-block;
+  margin-top: 40px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+}
+section a img {
+  margin-left: 10px;
+}
+
+footer {
+  background-image: url("/assets/img/footer_bg.svg");
+  background-repeat: no-repeat;
+  background-size: 1920px;
+  background-position: bottom;
+  min-height: 736px;
+  margin-top: -400px;
+  padding-top: 400px;
+  text-align: right;
+  color: #ffffff;
+  position: relative;
+}
+@media screen and (max-width: 425px) {
+  footer {
+    text-align: center;
+  }
+}
+footer .logo {
+  text-align: right;
+  margin-bottom: 20px;
+}
+footer .logo img {
+  max-width: 470px;
+}
+footer .copy {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px dashed #ffffff;
+}
+
+.loading {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(86, 30, 187, 0.8);
+  z-index: 10;
+}
+.loading .spinner {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin: 100px auto;
+}
+.loading .double-bounce1, .loading .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: sk-bounce 2s infinite ease-in-out;
+  animation: sk-bounce 2s infinite ease-in-out;
+}
+.loading .double-bounce2 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% {
+    -webkit-transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes sk-bounce {
+  0%, 100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+.message-box {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 11;
+  background-color: rgba(0, 53, 145, 0.6);
+  color: #003591;
+}
+.message-box .wrapper {
+  animation: 0.5s scale-in ease;
+  background-color: #ffffff;
+  padding: 30px;
+  max-width: 480px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes scale-in {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

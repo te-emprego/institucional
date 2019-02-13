@@ -1,0 +1,77 @@
+@import "../atoms/section_heading";
+@import "../atoms/section_form";
+
+section {
+    padding: 250px 0;
+
+    &:nth-child(1) {
+        background-image: url('/assets/img/projeto_bg.svg');
+        background-size: 1920px;
+        background-position: top center;
+        background-repeat: no-repeat;
+        color: $white;
+        padding-bottom: 400px;
+    }
+
+    &:nth-child(2) {
+        background-image: url('/assets/img/bg_white.svg');
+        background-size: 1920px;
+        background-position: top center;
+        background-repeat: no-repeat;
+        color: $primary;
+        padding-top: 500px;
+        margin-top: -400px;
+        position: relative;
+        overflow-x: hidden;
+
+        &::before {
+            width: 270px;
+            content: '';
+            height: 300px;
+            display: block;
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            background-repeat: no-repeat;
+
+            background-image: url('/assets/img/bolha.svg');
+        }
+
+        &::after {
+            width: 290px;
+            content: '';
+            height: 240px;
+            display: block;
+            position: absolute;
+            background-repeat: no-repeat;
+            top: 30px;
+            left: 35%;
+
+            background-image: url('/assets/img/bolha_alt.svg');
+        }
+    }
+
+    p {
+        display: block;
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-size: 16px;
+
+        &.subtitle {
+            font-size: 24px;
+        }
+    }
+
+    a {
+        display: inline-block;
+        margin-top: 40px;
+        color: $white;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 700;
+
+        img {
+            margin-left: 10px;
+        }
+    }
+}

@@ -1,0 +1,87 @@
+.custom-input {
+    padding: 7px;
+    border-radius: 60px;
+    box-shadow: 0 3px 6px rgba(#000, .15);
+    display: flex;
+    position: relative;
+    margin-bottom: 50px;
+    transition: .25s ease;
+    border: 3px solid transparent;
+
+    &.focus {
+        border-color: rgba($primary, .1);
+    }
+
+    input {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        font-size: 17px;
+        height: 40px;
+        border: none;
+        padding-left: 20px;
+        flex-grow: 1;
+        outline: none;
+    }
+
+    button {
+        background: $primary;
+        font-family: 'Nunito', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $white;
+        border-radius: 60px;
+        border: none;
+        padding: 0 35px;
+        outline: none;
+        transition: .25s ease;
+        cursor: pointer;
+
+        &:hover, &:focus {
+            padding: 0 40px;
+            background: darken($primary, 10%);
+        }
+
+        &:active {
+            transform: scale(.9);
+            transition: .15s ease;
+        }
+    }
+
+    span {
+        position: absolute;
+        bottom: -40px;
+        font-size: 16px;
+        font-weight: 400;
+        opacity: .6;
+        cursor: default;
+        transition: .15s ease;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    @media screen and (max-width: 375px) {
+        flex-wrap: wrap;
+
+        input {
+            width: 100%;
+            height: 50px;
+            border-radius: 60px;
+            background-color: transparent;
+            text-align: center;
+        }
+        button {
+            width: 100%;
+            height: 50px;
+            margin: auto;
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+        }
+
+        span {
+            bottom: -60px;
+        }
+    }
+}

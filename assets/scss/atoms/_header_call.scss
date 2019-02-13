@@ -1,0 +1,31 @@
+header .main-call {
+    color: $primary;
+    margin-top: 40px;
+
+    h2 {
+        font-size: 54px;
+        text-transform: uppercase;
+        line-height: 74px;
+        margin-bottom: 20px;
+
+        span {
+            font-size: 94px;
+            font-weight: 900;
+            @media screen and (max-width: 425px){
+                font-size: 60px;
+            }
+        }
+    }
+
+    p {
+        font-size: 24px;
+        font-weight: 700;
+        color: $secondary;
+        margin-bottom: 40px;
+        
+        strong {
+            font-weight: 700;
+            color: $primary;
+        }
+    }
+}

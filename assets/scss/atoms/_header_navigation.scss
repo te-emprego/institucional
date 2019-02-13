@@ -1,0 +1,21 @@
+header .navigation {
+    ul {
+        list-style: none;
+
+        li {
+            display: inline-block;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 14px;
+            color: $white;
+
+            a { color: $white; text-decoration: none; }
+
+            cursor: pointer;
+
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+    }
+}
