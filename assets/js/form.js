@@ -20,7 +20,7 @@ $('form').on('submit', function(event) {
     _LoadingController.start();
 
     $.ajax({
-        url: 'http://te-emprego.herokuapp.com/beta',
+        url: 'https://te-emprego.herokuapp.com/beta',
         method: 'POST',
         data: data,
         headers: {
