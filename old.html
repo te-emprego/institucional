@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Te Emprego - Plataforma gratuita de procura de emprego</title>
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <aside>
+        <div class="loading">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+        <div class="message-box" style="display: none;">
+            <div class="wrapper">
+                <p></p>
+            </div>
+        </div>
+    </aside>
+    <header>
+        <div class="container">
+            <div class="navigation">
+                <h1 class="logo">
+                    <span>Te Emprego</span>
+                    <img src="/assets/img/logo_white.svg" alt="Logo Te Emprego">
+                </h1>
+                <nav>
+                    <ul>
+                        <li data-go="#projeto">O Projeto</li>
+                        <li data-go="#vaga">Garanta sua vaga</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-8">
+                        <div class="main-call">
+                            <h2>
+                                Vagas de
+                                <span>Emprego</span>
+                            </h2>
+                            <p>
+                                O Te Emprego é uma plataforma <strong>100% gratuita</strong> para divulgação e procura de emprego.
+                            </p>
+                            <div class="custom-input" id="get-mailer">
+                                <input type="text" placeholder="digite seu email aqui">
+                                <button>Garantir acesso</button>
+                                <span>não iremos repassar seu email para terceiros.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-4">
+                        <div class="main-image">
+                            <img src="assets/img/header_illustration.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="projeto">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <h2>O Projeto</h2>
+                        <p>O Te Emprego nasceu de uma necessidade comum entre conhecidos e do próprio fundador do projeto.</p>
+                        <p>A ideia consistia em uma plataforma em que qualquer tipo de profissional pudesse se cadastrar e divulgar suas habilidades, e absolutamente qualquer pessoa poderia entrar em contato com ele para realizar trabalhos.</p>
+                        <p>Com alguns ajustes no escopo, o Te Emprego se tornou uma plataforma gratuita, de código livre e de qualidade para divulgação de vagas de emprego e currículo profissional.</p>
+
+                        <a href="#">Ver código fonte no GitHub <img src="/assets/img/github-icon.svg"></a>
+                    </div>
+                    <div class="col-lg-6 offset-lg-1">
+                        <img src="/assets/img/project_illustration.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="vaga">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-2">
+                        <h2>Garanta sua vaga</h2>
+                        <p class="subtitle">A plataforma está quase pronta, e você poderá ganhar recompensas se participar do período de testes!</p>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" name="nome" placeholder="seu nome *">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" name="email" placeholder="seu email *" id="to-receive-mail">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" name="telefone" data-mask placeholder="seu celular com ddd *">
+                                </div>
+                                <div class="col-md-6">
+                                    <button>Garantir acesso beta</button>
+                                </div>
+                            </div>                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="logo">
+                <img src="/assets/img/logo_white.svg">
+            </div>
+            <div class="copy">Te emprego &copy; 2019 Todos os direitos reservados.</div>
+            <div class="copy">Desenvolvido por <a href="https://danielbonifacio.com.br">Daniel Bonifacio</a>, mantido pela comunidade.</div>
+        </div>
+    </footer>
+
+    <script src="/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="/vendor/jquery/jquery.easeScroll.js"></script>
+    <script src="/vendor/jquery/jquery.mask.js"></script>
+    <script src="/assets/js/loading.js"></script>
+    <script src="/assets/js/messageBox.js"></script>
+    <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/form.js"></script>
+    <script src="/assets/js/link.js"></script>
+</body>
+</html>

@@ -1,132 +1,556 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Te Emprego - Plataforma gratuita de procura de emprego</title>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Te Emprego
+        </title>
+        <meta content="" name="description">
+        <meta content="" name="author">
+        <meta content="" name="keywords">
+        <meta content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+        <!-- Waye v1.0 || ex nihilo || January 2018 -->
+        <!-- style start -->
+        <link href="css/plugins.css" media="all" rel="stylesheet" type="text/css">
+        <link href="css/style.css" media="all" rel="stylesheet" type="text/css"><!-- style end -->
+        <!-- google fonts start -->
+        <link href="http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900%7CDosis:200,300,400,500,600,700,800%7COswald:300,400,700" rel="stylesheet" type="text/css">
+        <!-- google fonts end -->
+    </head>
+    <body>
+        <!-- preloader start -->
+        <div class="preloader-bg"></div>
+        <div id="preloader">
+            <div id="preloader-status">
+                <div class="preloader-position loader">
+                    <span></span>
+                </div>
+            </div>
+        </div><!-- preloader end -->
+        <!-- logo start -->
+        <div class="logo top-position"></div><!-- logo end -->
+        <!-- navigation trigger start -->
+        <div class="menu-trigger top-position" id="menu-mobile-btn">
+            <button class="lines-button minus menu-toggle" id="menu-mobile-caller" type="button"><span class="lines inverse"></span></button>
+        </div><!-- navigation trigger end -->
+        <!-- navigation start -->
+        <div id="ui-layer">
+            <div id="menu-wrapper">
+                <div id="menu-mobile">
+                    <div class="menu-nav-wrapper">
+                        <nav class="menu-nav">
+                            <ul>
+                                <li class="menu-mobile">
+                                    <a class="menu-state link-underline-menu active call-home" id="fire-home">Home</a>
+                                </li>
+                                <li class="menu-mobile">
+                                    <a class="menu-state link-underline-menu call-page" id="fire-about">Sobre</a>
+                                </li>
+                                <li class="menu-mobile">
+                                    <a class="menu-state link-underline-menu call-page" id="fire-services">Pilares</a>
+                                </li>
+                                <li class="menu-mobile">
+                                    <a class="menu-state link-underline-menu call-page" id="fire-contact">Contato</a>
+                                </li>
+                                <li class="credits">
+                                    <a href="#">&copy; 2019 Todos os direitos reservados.</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div><!-- navigation end -->
+        <!-- border top start -->
+        <div class="the-borders border-top top-position"></div><!-- border top end -->
+        <!-- border left start -->
+        <div class="the-borders border-left left-position"></div><!-- border left end -->
+        <!-- border right start -->
+        <div class="the-borders border-right right-position"></div><!-- border right end -->
+        <!-- border bottom start -->
+        <div class="the-borders border-bottom bottom-position"></div><!-- border bottom end -->
+        <!-- wave start -->
+        <canvas class="bottom-position" id="wave"></canvas><!-- wave end -->
+        <!-- social icons start -->
+        <div class="social-icons-wrapper bottom-position">
+            <ul class="social-icons">
+                <li class="social-icon">
+                    <a class="ion-social-twitter" href="#"></a>
+                </li>
+                <li class="social-icon">
+                    <a class="ion-social-facebook" href="#"></a>
+                </li>
+                <li class="social-icon">
+                    <a class="ion-social-googleplus" href="#"></a>
+                </li>
+                <li class="social-icon">
+                    <a class="ion-social-youtube" href="#"></a>
+                </li>
+                <li class="social-icon">
+                    <a class="ion-social-linkedin" href="#"></a>
+                </li>
+                <li class="social-icon">
+                    <a class="ion-social-instagram" href="#"></a>
+                </li>
+                <li class="social-icon">
+                    <a class="ion-social-pinterest" href="#"></a>
+                </li>
+                <li class="social-icon">
+                    <a class="ion-social-dribbble" href="#"></a>
+                </li>
+            </ul>
+        </div><!-- social icons end -->
+        <!-- countdown start -->
+        <div class="countdown bottom-position">
+            <h3>
+                {dnnn}
+            </h3>
+            <h2 class="countdown-bottom">
+                {dl}
+            </h2>
+        </div><!-- countdown end -->
+        <!-- hero bg start -->
+        <div class="hero-fullscreen">
+            <!-- single image start -->
+            <div class="hero-fullscreen-FIX">
+                <div class="hero-bg bg-img-SINGLE overlay overlay-dark-65"></div>
+            </div><!-- single image end -->
+        </div><!-- hero bg end -->
+        <!-- home start -->
+        <div class="upper-page current" id="home">
+            <!-- center container start -->
+            <div class="center-container-home">
+                <!-- center block start -->
+                <div class="center-block-home">
+                    <!-- upper content start -->
+                    <div class="upper-content">
+                        <!-- container start -->
+                        <div class="container sections-home">
+                            <!-- row start -->
+                            <div class="row introduction">
+                                <h2 class="home-page-title fadeIn-element">
+                                    Estamos chegando
+                                </h2>
+                                <h1 class="home-page-title fadeIn-element">
+                                    <img src="./assets/img/logo_white.svg" alt="">
+                                </h1>
+                                <!-- <div class="sign-up-modal-launcher-wrapper fadeIn-element">
+                                  dasdasda
+                                </div> -->
+                            </div><!-- row end -->
+                        </div><!-- container end -->
+                    </div><!-- upper content end -->
+                </div><!-- center block end -->
+            </div><!-- center container end -->
+            <!-- social icons mobile start -->
+            <div class="social-icons-wrapper social-icons-wrapper-mobile bottom-position">
+                <ul class="social-icons">
+                    <li class="social-icon">
+                        <a class="ion-social-twitter" href="#"></a>
+                    </li>
+                    <li class="social-icon">
+                        <a class="ion-social-facebook" href="#"></a>
+                    </li>
+                    <li class="social-icon">
+                        <a class="ion-social-googleplus" href="#"></a>
+                    </li>
+                    <li class="social-icon">
+                        <a class="ion-social-youtube" href="#"></a>
+                    </li>
+                    <li class="social-icon">
+                        <a class="ion-social-linkedin" href="#"></a>
+                    </li>
+                    <li class="social-icon">
+                        <a class="ion-social-instagram" href="#"></a>
+                    </li>
+                    <li class="social-icon">
+                        <a class="ion-social-pinterest" href="#"></a>
+                    </li>
+                    <li class="social-icon">
+                        <a class="ion-social-dribbble" href="#"></a>
+                    </li>
+                </ul>
+            </div><!-- social icons mobile end -->
+            <!-- countdown start -->
+            <div class="countdown countdown-mobile bottom-position">
+                <h3>
+                    {dnnn}
+                </h3>
+                <h2 class="countdown-bottom">
+                    {dl}
+                </h2>
+            </div><!-- countdown end -->
+        </div><!-- home end -->
+        <!-- sign up modal start -->
+        <div class="sign-up-modal">
+            <!-- container start -->
+            <div class="container">
+                <!-- center container start -->
+                <div class="center-container-sign-up-modal">
+                    <!-- center block start -->
+                    <div class="center-block-sign-up-modal">
+                        <!-- row start -->
+                        <div class="row center-block-sign-up-modal-padding-top">
+                            <!-- col start -->
+                            <div class="col-lg-12">
+                                <h2 class="section-heading">
+                                    Newsletter sign up
+                                </h2>
+                                <p>
+                                    Subscribe today to receive the latest news
+                                </p>
+                            </div><!-- col end -->
+                        </div><!-- row end -->
+                        <!-- row start -->
+                        <div class="row">
+                            <!-- col start -->
+                            <div class="col-lg-12">
+                                <!-- newsletter form start -->
+                                <div id="subscribe-wrapper">
+                                    <div id="newsletter">
+                                        <div class="newsletter">
+                                            <form action="subscribe.php" id="subscribe" method="post" name="subscribe">
+                                                <input class="subscribe-requiredField subscribe-email" id="subscribe-email" name="subscribe-email" placeholder="Email" type="text"> <button class=
+                                                "c-btn fullwidth-liquid" id="submit-2" type="submit"><span>Subscribe</span></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div><!-- newsletter form end -->
+                            </div><!-- col end -->
+                        </div><!-- row end -->
+                        <!-- row start -->
+                        <div class="row center-block-sign-up-modal-padding-bottom">
+                            <!-- col start -->
+                            <div class="col-lg-12">
+                                <div class="sign-up-modal-closer">
+                                    <span class="ion-close"></span>
+                                </div>
+                            </div><!-- col end -->
+                        </div><!-- row end -->
+                    </div><!-- center block end -->
+                </div><!-- center container end -->
+            </div><!-- container end -->
+        </div><!-- sign up modal end -->
+        <!-- about start -->
+        <div class="lower-page" id="about">
+            <!-- center container start -->
+            <div class="center-container">
+                <!-- center block start -->
+                <div class="center-block">
+                    <!-- lower content start -->
+                    <div class="lower-content">
+                        <!-- container start -->
+                        <div class="container sections">
+                            <!-- row start -->
+                            <div class="row">
+                                <!-- col start -->
+                                <div class="col-lg-12">
+                                    <h2 class="section-subheading">
+                                        <span>Quem somos nós</span>
+                                    </h2>
+                                    <h2 class="section-heading">
+                                        Sobre
+                                    </h2>
+                                </div><!-- col end -->
+                            </div><!-- row end -->
+                            <!-- divider start -->
+                            <div class="dividerOT"></div><!-- divider end -->
+                            <!-- row start -->
+                            <div class="row">
+                                <!-- col start -->
+                                <div class="col-md-6 col-sm-12 about-block">
+                                    <h4 class="about-heading">
+                                        Membros do time
+                                    </h4>
+                                    <div class="about-number-title facts-counter-number">
+                                        5
+                                    </div>
+                                    <p>
+                                        O Te Emprego é feito de desenvolvedores, para desenvolvedores. Contamos com uma equipe core que mantem os repositórios atualizados e seguros, para que outros desenvolvedores possam visualizar e aprender a vontade a como desenvolver uma aplicação de verdade.
+                                    </p>
+                                </div><!-- col end -->
+                                <!-- col start -->
+                                <div class="col-md-6 col-sm-12 about-block about-block-correction">
+                                    <h4 class="about-heading">
+                                        Beta testers
+                                    </h4>
+                                    <div class="about-number-title facts-counter-number">
+                                        200
+                                    </div>
+                                    <p>
+                                        Nossos repositórios contam com mais de 100 estrelas no GitHub. Temos mais de 200 pessoas cadastradas apenas no Beta. Isso é resultado da confiança e apoio da comunidade no projeto. O Te Emprego chegou para melhorar o cenário dos desenvolvedores no mundo todo!
+                                    </p>
+                                </div><!-- col end -->
+                            </div><!-- row end -->
+                        </div><!-- container end -->
+                    </div><!-- lower content end -->
+                </div><!-- center block end -->
+            </div><!-- center container end -->
+        </div><!-- about end -->
+        <!-- services start -->
+        <div class="lower-page" id="services">
+            <!-- center container start -->
+            <div class="center-container">
+                <!-- center block start -->
+                <div class="center-block">
+                    <!-- lower content start -->
+                    <div class="lower-content">
+                        <!-- container start -->
+                        <div class="container sections">
+                            <!-- row start -->
+                            <div class="row">
+                                <!-- col start -->
+                                <div class="col-lg-12">
+                                    <h2 class="section-subheading">
+                                        <span>O que nos molda</span>
+                                    </h2>
+                                    <h2 class="section-heading">
+                                        Pilares
+                                    </h2>
+                                </div><!-- col end -->
+                            </div><!-- row end -->
+                            <!-- divider start -->
+                            <div class="dividerOT"></div><!-- divider end -->
+                            <!-- row start -->
+                            <div class="row">
+                                <!-- col start -->
+                                <div class="col-md-4 col-sm-12 services-block">
+                                    <h4 class="service-heading">
+                                        Gratuito
+                                    </h4>
+                                    <div class="service-number-title">
+                                        Gratuito
+                                    </div><!-- skills bar start -->
+                                    <div class="show-skillbar">
+                                        <!-- skill 1 start -->
+                                        <div class="skillbar" data-percent="100">
+                                            <span class="skillbar-title"></span>
+                                            <div class="skillbar-bar"></div><span class="skill-bar-percent"></span>
+                                        </div><!-- skill 1 end -->
+                                    </div><!-- skills bar end -->
+                                    <p>
+                                        O principal atrativo para negócios do Te Emprego, é que ele é uma plataforma 100% gratuita, tanto para empresas anunciarem as vagas, quanto para usuários se candidatarem. Não cobramos nada pelo serviço!
+                                    </p>
+                                </div><!-- col end -->
+                                <!-- col start -->
+                                <div class="col-md-4 col-sm-12 services-block services-block-correction">
+                                    <h4 class="service-heading">
+                                        Open Source
+                                    </h4>
+                                    <div class="service-number-title">
+                                        Open Source
+                                    </div><!-- skills bar start -->
+                                    <div class="show-skillbar">
+                                        <!-- skill 2 start -->
+                                        <div class="skillbar" data-percent="100">
+                                            <span class="skillbar-title"></span>
+                                            <div class="skillbar-bar"></div><span class="skill-bar-percent"></span>
+                                        </div><!-- skill 2 end -->
+                                    </div><!-- skills bar end -->
+                                    <p>
+                                        O fundador do projeto, Daniel Bonifacio, apostou forte no modelo de negócios Open Source. Nós, do Te Emprego, acreditamos que este modelo tem muito a evoluir e agregar à comunidade. Por isso somos Open Source.
+                                    </p>
+                                </div><!-- col end -->
+                                <!-- col start -->
+                                <div class="col-md-4 col-sm-12 services-block services-block-correction">
+                                    <h4 class="service-heading">
+                                        Funcional
+                                    </h4>
+                                    <div class="service-number-title">
+                                        Funcional
+                                    </div><!-- skills bar start -->
+                                    <div class="show-skillbar">
+                                        <!-- skill 3 start -->
+                                        <div class="skillbar" data-percent="100">
+                                            <span class="skillbar-title"></span>
+                                            <div class="skillbar-bar"></div><span class="skill-bar-percent"></span>
+                                        </div><!-- skill 3 end -->
+                                    </div><!-- skills bar end -->
+                                    <p>
+                                        Conseguimos unir no Te Emprego o melhor de cada uma das plataformas. Desde a simplicidade e objetividade, aos detalhes imprescindíveis. O Te Emprego é uma ferramenta gratuita completa para quem quer anunciar ou procurar vagas de emprego.
+                                    </p>
+                                </div><!-- col end -->
+                            </div><!-- row end -->
+                        </div><!-- container end -->
+                    </div><!-- lower content end -->
+                </div><!-- center block end -->
+            </div><!-- center container end -->
+        </div><!-- services end -->
+        <!-- works start -->
 
-    <link rel="stylesheet" href="/assets/css/main.css">
-</head>
-<body>
-    <aside>
-        <div class="loading">
-            <div class="spinner">
-                <div class="double-bounce1"></div>
-                <div class="double-bounce2"></div>
-            </div>
-        </div>
-        <div class="message-box" style="display: none;">
-            <div class="wrapper">
-                <p></p>
-            </div>
-        </div>
-    </aside>
-    <header>
-        <div class="container">
-            <div class="navigation">
-                <h1 class="logo">
-                    <span>Te Emprego</span>
-                    <img src="/assets/img/logo_white.svg" alt="Logo Te Emprego">
-                </h1>
-                <nav>
-                    <ul>
-                        <li data-go="#projeto">O Projeto</li>
-                        <li data-go="#vaga">Garanta sua vaga</li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="content">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-8">
-                        <div class="main-call">
-                            <h2>
-                                Vagas de
-                                <span>Emprego</span>
-                            </h2>
-                            <p>
-                                O Te Emprego é uma plataforma <strong>100% gratuita</strong> para divulgação e procura de emprego.
-                            </p>
-                            <div class="custom-input" id="get-mailer">
-                                <input type="text" placeholder="digite seu email aqui">
-                                <button>Garantir acesso</button>
-                                <span>não iremos repassar seu email para terceiros.</span>
+        <!-- contact start -->
+        <div class="lower-page" id="contact">
+            <!-- center container start -->
+            <div class="center-container">
+                <!-- center block start -->
+                <div class="center-block">
+                    <!-- lower content start -->
+                    <div class="lower-content">
+                        <!-- container start -->
+                        <div class="container sections">
+                            <!-- row start -->
+                            <div class="row">
+                                <!-- col start -->
+                                <div class="col-lg-12">
+                                    <h2 class="section-subheading section-subheading-contact">
+                                        <span>Diga um oi</span>
+                                    </h2>
+                                    <h2 class="section-heading section-heading-contact">
+                                        Contato
+                                    </h2>
+                                </div><!-- col end -->
+                            </div><!-- row end -->
+                            <!-- divider start -->
+                            <div class="dividerOT"></div><!-- divider end -->
+                            <!-- row start -->
+                            <div class="row">
+                                <!-- contact info start -->
+                                <div class="contact-info-wrapper">
+                                    <!-- col start -->
+                                    <div class="col-md-4 col-sm-12">
+                                        <div class="contact-info-description">
+                                            Por todo o mundo!</span>
+                                        </div>
+                                    </div><!-- col end -->
+                                    <!-- col start -->
+                                    <div class="col-md-4 col-sm-12">
+                                        <div class="contact-info-description">
+                                            <span class="contact-info-text large"><a class="link-underline" href=
+                                            "mailto:contato@teemprego.com.br">contato@teemprego.com.br</a></span>
+                                        </div>
+                                    </div><!-- col end -->
+                                    <!-- col start -->
+                                    <div class="col-md-4 col-sm-12">
+                                        <div class="contact-info-description">
+                                            <span class="contact-info-text">
+                                              +55 27 99269-9969
+                                            </span>
+                                        </div>
+                                    </div><!-- col end -->
+                                </div><!-- contact info end -->
+                            </div><!-- row end -->
+                            <!-- divider start -->
+                            <div class="dividerOT"></div><!-- divider end -->
+                            <!-- row start -->
+                            <div class="row">
+                                <!-- col start -->
+                                <div class="col-lg-12">
+                                    <div class="contact-modal-launcher-wrapper">
+                                        <!-- <a class="button-link contact-modal-launcher"><span>Use the form</span><i class="ion-android-arrow-dropright"></i></a> -->
+                                    </div>
+                                </div><!-- col end -->
+                            </div><!-- row end -->
+                        </div><!-- container end -->
+                    </div><!-- lower content end -->
+                </div><!-- center block end -->
+            </div><!-- center container end -->
+        </div><!-- contact end -->
+        <!-- contact modal start -->
+        <div class="contact-modal">
+            <!-- container start -->
+            <div class="container">
+                <!-- center container start -->
+                <div class="center-container-contact-modal">
+                    <!-- center block start -->
+                    <div class="center-block-contact-modal">
+                        <!-- row start -->
+                        <div class="row center-block-contact-modal-padding-top">
+                            <!-- col start -->
+                            <div class="col-lg-12">
+                                <h2 class="section-heading">
+                                    Get in touch
+                                </h2>
+                                <p>
+                                    Promise, we won't stay silent
+                                </p>
+                            </div><!-- col end -->
+                        </div><!-- row end -->
+                        <!-- row start -->
+                        <div class="row contact-modal-wrapper">
+                            <!-- col start -->
+                            <div class="col-lg-12">
+                                <!-- contact form start -->
+                                <div id="contact-form">
+                                    <form action="contact.php" id="form" method="post" name="send">
+                                        <!-- col start -->
+                                        <div class="col-sm-4 col-md-4 col-lg-4">
+                                            <input class="requiredField name" id="name" name="name" placeholder="Name" type="text">
+                                        </div><!-- col end -->
+                                        <!-- col start -->
+                                        <div class="col-sm-4 col-md-4 col-lg-4">
+                                            <input class="requiredField email" id="email" name="email" placeholder="Email" type="text">
+                                        </div><!-- col end -->
+                                        <!-- col start -->
+                                        <div class="col-sm-4 col-md-4 col-lg-4">
+                                            <input class="requiredField subject" id="subject" name="subject" placeholder="Subject" type="text">
+                                        </div><!-- col end -->
+                                        <div class="make-space">
+                                            <textarea class="requiredField message" id="message" name="message" placeholder="Message"></textarea>
+                                        </div>
+                                        <div>
+                                            <button class="c-btn fullwidth-liquid" id="submit" type="submit"><span>Submit</span></button>
+                                        </div>
+                                    </form>
+                                </div><!-- contact form end -->
+                            </div><!-- col end -->
+                        </div><!-- row end -->
+                        <!-- row start -->
+                        <div class="row center-block-contact-modal-padding-bottom">
+                            <!-- col start -->
+                            <div class="col-lg-12">
+                                <div class="contact-modal-closer">
+                                    <span class="ion-close"></span>
+                                </div>
+                            </div><!-- col end -->
+                        </div><!-- row end -->
+                    </div><!-- center block end -->
+                </div><!-- center container end -->
+            </div><!-- container end -->
+        </div><!-- contact modal end -->
+        <!-- photoSwipe background start -->
+        <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+            <div class="pswp__bg"></div>
+            <div class="pswp__scroll-wrap">
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+                <div class="pswp__ui pswp__ui--hidden">
+                    <div class="pswp__top-bar">
+                        <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                        "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                        "Zoom in/out"></button>
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                                <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-6 col-lg-4">
-                        <div class="main-image">
-                            <img src="assets/img/header_illustration.svg">
-                        </div>
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div>
+                    </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                    "Next (arrow right)"></button>
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-
-    <main>
-        <section id="projeto">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5">
-                        <h2>O Projeto</h2>
-                        <p>O Te Emprego nasceu de uma necessidade comum entre conhecidos e do próprio fundador do projeto.</p>
-                        <p>A ideia consistia em uma plataforma em que qualquer tipo de profissional pudesse se cadastrar e divulgar suas habilidades, e absolutamente qualquer pessoa poderia entrar em contato com ele para realizar trabalhos.</p>
-                        <p>Com alguns ajustes no escopo, o Te Emprego se tornou uma plataforma gratuita, de código livre e de qualidade para divulgação de vagas de emprego e currículo profissional.</p>
-
-                        <a href="#">Ver código fonte no GitHub <img src="/assets/img/github-icon.svg"></a>
-                    </div>
-                    <div class="col-lg-6 offset-lg-1">
-                        <img src="/assets/img/project_illustration.svg" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="vaga">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 offset-lg-2">
-                        <h2>Garanta sua vaga</h2>
-                        <p class="subtitle">A plataforma está quase pronta, e você poderá ganhar recompensas se participar do período de testes!</p>
-                        <form>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <input type="text" name="nome" placeholder="seu nome *">
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="text" name="email" placeholder="seu email *" id="to-receive-mail">
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="text" name="telefone" data-mask placeholder="seu celular com ddd *">
-                                </div>
-                                <div class="col-md-6">
-                                    <button>Garantir acesso beta</button>
-                                </div>
-                            </div>                            
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="logo">
-                <img src="/assets/img/logo_white.svg">
-            </div>
-            <div class="copy">Te emprego &copy; 2019 Todos os direitos reservados.</div>
-            <div class="copy">Desenvolvido por <a href="https://danielbonifacio.com.br">Daniel Bonifacio</a>, mantido pela comunidade.</div>
-        </div>
-    </footer>
-
-    <script src="/vendor/jquery/jquery-3.3.1.min.js"></script>
-    <script src="/vendor/jquery/jquery.easeScroll.js"></script>
-    <script src="/vendor/jquery/jquery.mask.js"></script>
-    <script src="/assets/js/loading.js"></script>
-    <script src="/assets/js/messageBox.js"></script>
-    <script src="/assets/js/app.js"></script>
-    <script src="/assets/js/form.js"></script>
-    <script src="/assets/js/link.js"></script>
-</body>
+        </div><!-- photoSwipe background end -->
+        <!-- to top arrow start -->
+        <a class="scrollToTop" href="#">
+        <div class="to-top-arrow to-top-arrow">
+            <span class="ion-ios-arrow-up"></span>
+        </div></a><!-- to top arrow end -->
+        <!-- scripts start --> 
+        <script src="js/plugins.js">
+        </script> 
+        <script src="js/waye.js">
+        </script> 
+        <script src="js/wave.js">
+        </script> <!-- scripts end -->
+    </body>
 </html>
