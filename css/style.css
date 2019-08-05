@@ -379,6 +379,10 @@ color: #fff;
 margin: 0 0 0 12px;
 }
 
+.home-page-title > img {
+  width: 80%;
+}
+
 @media only screen and (max-width: 880px) {
   h2.home-page-title {
 	margin: 0 0 0 11px;
