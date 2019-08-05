@@ -367,6 +367,10 @@ z-index: 1;
   }
 }
 
+h1 img {
+  width: 80%;
+}
+
 h2.home-page-title {
 font-family: 'Dosis', sans-serif;
 font-style: normal;
