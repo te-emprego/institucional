@@ -1796,7 +1796,7 @@ bottom: 17px;
 }
 
 .social-icons-wrapper.social-icons-wrapper-mobile {
-visibility: hidden;
+visibility: hidden !important;
 }
 
 @media only screen and (max-width: 640px) {
